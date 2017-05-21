@@ -6,7 +6,8 @@ public class BowlingGame {
 		int count=0;
 		int[] score=new int[length-10];
 		for(int i=0;i<length;i++){
-			switch(bowlingCode.split("|")[i]){
+      String s=bowlingCode.split("|")[i];
+			switch(s){
 			case "X":
 				score[count]=10;
 				count++;
